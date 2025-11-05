@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# iOS / Android specific
+learning-app/android/
+learning-app/ios/
+*.apk
+*.aab
+
+# Editor settings
+.vscode/
+.idea/
+.DS_Store

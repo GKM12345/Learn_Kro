@@ -1,0 +1,16 @@
+{
+  "name": "learning_repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+      "setup": "npm run install:web && npm run install:app",
+      "install:web": "cd learning-web && npm install",
+      "install:app": "cd learning-app && npm install",
+      "start:web": "cd learning-web && npm run dev",
+      "start:app": "cd learning-app && npm start"
+    },
+    "author": "Gaurav Kumar Mishra",
+    "license": "ISC"
+}
+
