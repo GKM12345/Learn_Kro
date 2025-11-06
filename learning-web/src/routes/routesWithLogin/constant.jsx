@@ -22,6 +22,12 @@ export const routeData = [
         icon: <MdCategory />,
     },
     {
+        id: 3,
+        name: 'CoursesModule',
+        url: '/courses/module',
+        componentName: 'CoursesModule',
+    },
+    {
         id: 6,
         name: 'Profile',
         url: '/profile/index',
