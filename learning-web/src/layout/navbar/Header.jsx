@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiMenu } from "react-icons/hi";
 import { RiMenuUnfold4Fill } from "react-icons/ri";
 import { Box, IconButton, Text } from "@chakra-ui/react"

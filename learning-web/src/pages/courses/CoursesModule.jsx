@@ -20,13 +20,14 @@ const CoursesModule = () => {
     return <PaymentPage courseId={courseId} />;
 
   // If subscribed → fetch videos
-  const { data: courseVideos } = getVideosOfCourse(courseId);
+  const { data: courseVideos, lastSeenVideoId } = getVideosOfCourse(courseId);
 
     return (
         <CoursePlayerLayout
             courseId={courseId}
             sections={courseVideos}
             subscription={subscription_status}
+            lastSeenVideoId={lastSeenVideoId}
         />
     )
 };
