@@ -18,8 +18,18 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ],
+      "webView": {
+        "supportsFullscreen": true
+      },
+      "softwareKeyboardLayoutMode": "pan",
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gkm01.learningapp"
     },
     "web": {
       "output": "static",
@@ -39,11 +49,26 @@
           }
         }
       ],
-      "expo-asset"
+      "expo-asset",
+      "./plugins/withHardwareAcceleration",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "hardwareAccelerated": true
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "da2babe0-d57f-4410-8b34-79652b665182"
+      }
     }
   }
 }

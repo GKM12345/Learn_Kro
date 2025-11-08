@@ -106,7 +106,12 @@ export default function HomeScreen() {
         allowsFullscreenVideo={true}         
         mediaPlaybackRequiresUserAction={false}
         allowsInlineMediaPlayback={true}  
-        mixedContentMode="always" 
+        mixedContentMode="always"
+        thirdPartyCookiesEnabled={true}
+        originWhitelist={['*']}
+        userAgent="Mozilla/5.0 (Linux; Android 10; Mobile; rv:102.0) Gecko/102.0 Firefox/102.0"
+        androidLayerType="hardware"
+        setSupportMultipleWindows={false} 
         onNavigationStateChange={(navState) => {
           setCanGoBack(navState.canGoBack);
           setCurrentUrl(navState.url);
