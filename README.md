@@ -3,13 +3,16 @@
 ## 🔗 GitHub Repository
 [https://github.com/GKM12345/Learn_Kro](https://github.com/GKM12345/Learn_Kro)
 
+
 ## Working Application  
 This project is a **single monorepo** that contains both a **React(Vite) + Chakra-UI** web app and a **React Native (Expo)** mobile app that opens the same website via WebView.
+
 
 ### Folder Structure
 Learning_Repo/
 ├── learning-web/ → React + Chakra UI web app (hosted on Vercel)
 └── learning-app/ → Expo mobile app (WebView wrapper)
+
 
 - **Web App (learning-web)**  
   Hosted on Vercel: [https://learn-kro.vercel.app](https://learn-kro.vercel.app)  
@@ -20,7 +23,8 @@ Learning_Repo/
   5. All the mock data are accordingly which supports like real Apis that industries follow.
   6. User can Logout, Change theme dark/light mode.
 
-  - **Mobile App (learning-app)**
+
+- **Mobile App (learning-app)**
   Open Link on Mobile to Install Android App Which I have create **Andriod Supports** for now only: [https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3](https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3)  
   1. Built using **Expo SDK 54**, displays the same website inside a WebView.
   2. Feels Like Native App and UI Design supports Mobile First Design.
