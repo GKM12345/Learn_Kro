@@ -8,7 +8,7 @@ function App() {
       <Provider>
         {/* <AlertBox /> */}
         <Routes />
-      </Provider>  
+      </Provider>
     </div>
   );
 }

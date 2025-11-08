@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import * as component from '../../pages/index';
 import { routeDataBeforeLogin } from './constant';
 
-const Default = component.Error404;
+const Default = component.Login;
 
 const RoutesBeforeLogin = () => {
   return (
@@ -27,6 +27,7 @@ const CreateRoute = (routeData) => {
             );
           })
         : ''}
+        <Route path="*" element={<Default />} />
     </>
   );
 };

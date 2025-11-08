@@ -1,23 +1,17 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import { Box, Flex, Text } from "@chakra-ui/react";
-// import Swal from 'sweetalert2';
-
+import { useAuth } from "../../hooks/AuthContext";
+import useNavigateUrl from '../../hooks/useNavigateUrl';
 
 
 const Logout = (props) => {
-    const {id, color, icon, navName, open} = props;
-    const navigate = useNavigate();
+    const {id, color, icon, navName, open=false} = props;
+    const {handleLogin} = useAuth();
+    const { goto } = useNavigateUrl();
 
     const handleLogout = async () => {
         try {
-          // await signOut();
-          //   Swal.fire({
-          //       icon: 'success', title: 'Logout Successful!', text: 'You have been logged out successfully.', timer: 2000,
-          //       showConfirmButton: false
-          //   }).then(() => {
-          //       navigate('/');
-          //   });
+          handleLogin(false);
+          goto('');
         } catch (error) {
           console.log('Error signing out: ', error);
         }

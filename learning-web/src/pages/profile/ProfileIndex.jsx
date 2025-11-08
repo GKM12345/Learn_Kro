@@ -1,4 +1,6 @@
 import { Box, Text, VStack } from "@chakra-ui/react";
+import { MdOutlineLogout } from "react-icons/md";
+import Logout from "../../layout/navbar/Logout";
 
 const ProfileIndex = () => {
   return (
@@ -43,6 +45,12 @@ const ProfileIndex = () => {
             <Text>2. User can change Password and Logout</Text>
             <Text>3. User can see Downloaded Videos here etc...</Text>
         </VStack>
+      </Box>
+      <Box mt={6} display="flex" alignItems="center" gap={4}>
+          <Text>Logout</Text>
+          <Box mt={6} >
+            <Logout  icon = {<MdOutlineLogout />}/>
+          </Box>
       </Box>
     </Box>
   )
