@@ -3,13 +3,14 @@
 ## 🔗 GitHub Repository
 [https://github.com/GKM12345/Learn_Kro](https://github.com/GKM12345/Learn_Kro)
 
+---
 
 ## Working Application  
 This project is a **single monorepo** that contains both a **React(Vite) + Chakra-UI** web app and a **React Native (Expo)** mobile app that opens the same website via WebView.
 
 
 ### Folder Structure
-Learning_Repo/
+Learn_Kro/
 ├── learning-web/ → React + Chakra UI web app (hosted on Vercel)
 └── learning-app/ → Expo mobile app (WebView wrapper)
 
@@ -30,3 +31,24 @@ Learning_Repo/
   2. Feels Like Native App and UI Design supports Mobile First Design.
   3. All the feature mentioned above in Web App (learning-web) are supported here User can change theme from settings section and logout from profile section.
   4. Supports fullscreen video playback, and Android back button navigation.
+
+---
+
+## Steps to Run and Build
+
+### 1. Setup & Install
+
+**Prerequisite Node.js (>= 18) and npm required**
+
+```bash
+git clone https://github.com/GKM12345/Learn_Kro.git
+cd .\Learn_Kro\
+npm run setup (Install All Dependencies of Project)
+
+**To Start Web Server**
+npm run start:web
+Open https://localhost:5173/ this url on browser.
+
+**To Start Web Server**
+npm run start:app
+Scan the QR code or Open Link using the Expo Go app on your device to preview.
