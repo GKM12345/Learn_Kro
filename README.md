@@ -1,6 +1,6 @@
 # Learning Repo — Web + Mobile (Monorepo)
 
-## 🔗 GitHub Repository
+## GitHub Repository
 [https://github.com/GKM12345/Learn_Kro](https://github.com/GKM12345/Learn_Kro)
 
 ---
@@ -36,19 +36,57 @@ Learn_Kro/
 
 ## Steps to Run and Build
 
-### 1. Setup & Install
+### 1. Setup Locally
 
-**Prerequisite Node.js (>= 18) and npm required**
+**Prerequisite** 
+1. Node.js (>= 18)
+2. npm required
+3. Expo App for preview
+4. Expo account to create android or ios build
 
 ```bash
 git clone https://github.com/GKM12345/Learn_Kro.git
 cd .\Learn_Kro\
-npm run setup (Install All Dependencies of Project)
 
-**To Start Web Server**
-npm run start:web
-Open https://localhost:5173/ this url on browser.
+#Install All Dependencies of Project
+npm run setup 
 
-**To Start Web Server**
+# To Start Web Server
+#Open https://localhost:5173/ this url on browser.
+npm run start:web 
+
+# To Start App Server
+#Scan the QR code or Open Link using the Expo Go app on your device to preview.
 npm run start:app
-Scan the QR code or Open Link using the Expo Go app on your device to preview.
+```
+
+### 2. Create Android Build & Install App
+
+```bash
+#go to learning-app dir.
+cd .\learning-app\
+
+npm install -g eas-cli
+
+#check eas version
+eas --version
+
+#login using expo credential (required to create build using cloud dependencies)
+eas login
+
+#Configure the build created for
+eas build:configure
+
+#Run this command and wait for 10-15min
+eas build -p android --profile preview
+```
+
+After that you will get url open in android mobile or scan the qr and install the app
+
+I have already created please install it after enterting this url from browser.
+[https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3](https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3)
+
+
+## Author
+**Gaurav Kumar Mishra** 
+**Engineer 2 - Software Develeopment**
