@@ -1,4 +1,4 @@
-# Learning Repo — Web + Mobile (Monorepo)
+# Learn Kro — Web + Mobile (Monorepo)
 
 ## GitHub Repository
 [https://github.com/GKM12345/Learn_Kro](https://github.com/GKM12345/Learn_Kro)
@@ -10,8 +10,8 @@ This project is a **single monorepo** that contains both a **React(Vite) + Chakr
 
 
 ### Folder Structure
-Learn_Kro/
-├── learning-web/ → React + Chakra UI web app (hosted on Vercel)
+Learn_Kro/ <br>
+├── learning-web/ → React + Chakra UI web app (hosted on Vercel) <br>
 └── learning-app/ → Expo mobile app (WebView wrapper)
 
 
@@ -25,11 +25,10 @@ Learn_Kro/
   6. User can Logout, Change theme dark/light mode.
 
 
-- **Mobile App (learning-app)**
-  Open Link on Mobile to Install Android App Which I have create **Andriod Supports** for now only: [https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3](https://expo.dev/accounts/gkm01/projects/learning-app/builds/57407883-6a92-4b97-ab9c-c59383432de3)  
+- **Mobile App (learning-app)** 
   1. Built using **Expo SDK 54**, displays the same website inside a WebView.
   2. Feels Like Native App and UI Design supports Mobile First Design.
-  3. All the feature mentioned above in Web App (learning-web) are supported here User can change theme from settings section and logout from profile section.
+  3. All the feature mentioned above in Web App (learning-web) are supported here. User can change theme from settings section and logout from profile section.
   4. Supports fullscreen video playback, and Android back button navigation.
 
 ---
@@ -48,36 +47,36 @@ Learn_Kro/
 git clone https://github.com/GKM12345/Learn_Kro.git
 cd .\Learn_Kro\
 
-#Install All Dependencies of Project
+# Install All Dependencies of Project
 npm run setup 
 
 # To Start Web Server
-#Open https://localhost:5173/ this url on browser.
+# Open https://localhost:5173/ this url on browser.
 npm run start:web 
 
 # To Start App Server
-#Scan the QR code or Open Link using the Expo Go app on your device to preview.
+# Scan the QR code or Open Link using the Expo Go app on your device to preview.
 npm run start:app
 ```
 
 ### 2. Create Android Build & Install App
 
 ```bash
-#go to learning-app dir.
+# go to learning-app dir.
 cd .\learning-app\
 
 npm install -g eas-cli
 
-#check eas version
+# check eas version
 eas --version
 
-#login using expo credential (required to create build using cloud dependencies)
+# login using expo credential (required to create build using cloud dependencies)
 eas login
 
-#Configure the build created for
+# Configure the build created for
 eas build:configure
 
-#Run this command and wait for 10-15min
+# Run this command and wait for 10-15min
 eas build -p android --profile preview
 ```
 
@@ -88,5 +87,5 @@ I have already created please install it after enterting this url from browser.
 
 
 ## Author
-**Gaurav Kumar Mishra** 
+**Gaurav Kumar Mishra** <br>
 **Engineer 2 - Software Develeopment**
